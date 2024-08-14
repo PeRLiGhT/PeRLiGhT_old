@@ -1,0 +1,81 @@
+#center {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#left {
+    text-align: left;
+}
+
+.k2d-regular {
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('Greenho.png') no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.fonts1 {
+    font-size: 60px;
+}
+
+.fonts2 {
+    font-size: 50px;
+}
+
+.fonts3 {
+    font-size: 30px;
+}
+
+.fonts4 {
+    font-size: 20px;
+}
+
+.fonts5 {
+    font-size: 25px;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007c15, 0 0 40px #007c15, 0 0 50px #007c15, 0 0 60px #007c15, 0 0 70px #007c15;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #5bff56, 0 0 40px #5bff56, 0 0 50px #5bff56, 0 0 60px #5bff56, 0 0 70px #5bff56, 0 0 80px #5bff56;
+    }
+}
