@@ -10,20 +10,43 @@
 
 <body>
     <div id="center">
-        <div id="center">
-            <div class="container">
-                <div id="center" class="fonts1 glow">Portfolio</div>
-                <div class="icons k2d-regular">
-                    <a href="https://perlight.github.io/Home.html">Home</a>
-                    <a href="https://perlight.github.io/Experience.html">Experience</a>
-                    <a href="https://perlight.github.io/Contact.html">Contact</a>
-                    <a href="https://perlight.github.io/Projects.html">Projects</a>
-                </div>
-                <div id="center"><img src="https://perlight.github.io/Photo.jpeg" class="border" alt="image" style="width: 100%" />
-                </div>
+        <div class="loader-container" id="loadsection">
+            <div class="flipping-cards">
+                <div class="card">l</div>
+                <div class="card">o</div>
+                <div class="card">a</div>
+                <div class="card">d</div>
+                <div class="card">i</div>
+                <div class="card">n</div>
+                <div class="card">g</div>
+            </div>
+        </div>
+
+
+        <div class="container" id="waitload">
+            <div id="center" class="fonts1 glow">Portfolio</div>
+            <div class="icons k2d-regular">
+                <a href="https://perlight.github.io/Home.html">Home</a>
+                <a href="https://perlight.github.io/Experience.html">Experience</a>
+                <a href="https://perlight.github.io/Contact.html">Contact</a>
+                <a href="https://perlight.github.io/Projects.html">Projects</a>
+            </div>
+            <div id="center"><img src="https://perlight.github.io/Photo.jpeg" class="border" alt="image"
+                    style="width: 100%" />
             </div>
         </div>
     </div>
+    </div>
+    <script>
+        waitload.style.display = "none";
+        function hideElementAfterDelay(elementId) {
+            setTimeout(function () {
+                document.getElementById(elementId).style.display = 'none';
+                waitload.style.display = "block";
+            }, 2000);
+        }
+        hideElementAfterDelay('loadsection');
+    </script>
 </body>
 </head>
 
